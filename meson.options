@@ -1,0 +1,8 @@
+option('icondir',  type : 'string', value : 'auto',
+       description : 'Default icon directory')
+
+option('cursorpath',  type : 'string', value : 'auto',
+       description : 'Default search path for cursors')
+
+option('lib_man_suffix', type : 'string', value : '3',
+       description : 'Suffix for library man pages')

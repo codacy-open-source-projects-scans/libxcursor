@@ -1,0 +1,16 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+includedir=@includedir@
+libdir=@libdir@
+
+datarootdir=@datarootdir@
+icondir=@ICONDIR@
+
+Name: Xcursor
+Description: X Cursor Library
+URL: https://gitlab.freedesktop.org/xorg/lib/libxcursor/
+Version: @VERSION@
+Requires: xproto
+Requires.private: x11, xrender, xfixes
+Libs: -L${libdir} -lXcursor
+Cflags: -I${includedir}
