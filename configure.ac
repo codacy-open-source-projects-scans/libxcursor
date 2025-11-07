@@ -1,6 +1,8 @@
 #
 #  Copyright © 2003 Keith Packard
 #
+#  SPDX-License-Identifier: HPND-sell-variant
+#
 #  Permission to use, copy, modify, distribute, and sell this software and its
 #  documentation for any purpose is hereby granted without fee, provided that
 #  the above copyright notice appear in all copies and that both that
@@ -26,7 +28,7 @@ AC_PREREQ([2.60])
 # This is the package version number, not the shared library
 # version.  This version number will be substituted into Xcursor.h
 #
-AC_INIT([libXcursor], [1.2.2],
+AC_INIT([libXcursor], [1.2.3],
         [https://gitlab.freedesktop.org/xorg/lib/libxcursor/-/issues],
         [libXcursor])
 AC_CONFIG_SRCDIR([Makefile.am])

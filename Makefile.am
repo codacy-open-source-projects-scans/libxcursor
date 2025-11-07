@@ -1,6 +1,8 @@
 #
 #  Copyright © 2003 Keith Packard, Noah Levitt
 #
+#  SPDX-License-Identifier: HPND-sell-variant
+#
 #  Permission to use, copy, modify, distribute, and sell this software and its
 #  documentation for any purpose is hereby granted without fee, provided that
 #  the above copyright notice appear in all copies and that both that
@@ -44,4 +46,4 @@ ChangeLog:
 
 dist-hook: ChangeLog INSTALL
 
-EXTRA_DIST = README.md
+EXTRA_DIST = README.md meson.build meson.options
