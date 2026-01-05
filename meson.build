@@ -139,6 +139,13 @@ lib = library(
   install: true,
 )
 
+lib_dep = declare_dependency(
+  link_with: lib,
+  include_directories: 'include',
+)
+
+meson.override_dependency('xcursor', lib_dep)
+
 datarootdir = get_option('prefix') / get_option('datadir')
 pc_datarootdir = datarootdir.replace(get_option('prefix'), '${prefix}')
 pc_icondir = icondir.replace(datarootdir, '${datarootdir}')

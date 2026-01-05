@@ -761,10 +761,16 @@ _XcursorXcFileLoadImage (XcursorFile *file, int size, XcursorBool resize)
 	returnAddr(NULL);
     bestSize = _XcursorFindBestSize (fileHeader, (XcursorDim) size, &nsize);
     if (!bestSize)
+    {
+	_XcursorFileHeaderDestroy (fileHeader);
 	returnAddr(NULL);
+    }
     toc = _XcursorFindImageToc (fileHeader, bestSize, 0);
     if (toc < 0)
+    {
+	_XcursorFileHeaderDestroy (fileHeader);
 	returnAddr(NULL);
+    }
     image = _XcursorReadImage (file, fileHeader, toc);
     _XcursorFileHeaderDestroy (fileHeader);
 
